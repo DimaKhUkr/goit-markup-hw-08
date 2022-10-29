@@ -1,0 +1,200 @@
+// HERO
+
+.hero {
+  background-color: $darkBackgroundColor;
+  text-align: center;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  &__title {
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    min-width: 696px;
+    color: $snowWhiteColor;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  &__button {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__button:focus,
+  &__button:hover {
+    color: $tittleTextColor;
+    background: $altBackgroundColor;
+  }
+  &__bg-image {
+    padding-bottom: 200px;
+    padding-top: 200px;
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+// FEATURES
+.features {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__description {
+    line-height: 1.71;
+  }
+  &__title {
+    margin-bottom: 10px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  &__items {
+    width: calc((100% - 3 * 30px) / 4);
+  }
+  &__box {
+    padding: 25px 100px;
+    background: $altBackgroundColor;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  &__icons {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+// WORKS
+.works {
+  padding-top: 0;
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__items {
+    position: relative;
+  }
+  &__description {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 27px 0;
+    width: 100%;
+    height: 70px;
+    color: $snowWhiteColor;
+    background-color: rgba(47, 48, 58, 0.8);
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+// TEAM
+
+.team {
+  background-color: $altBackgroundColor;
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+  }
+  &__role {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+  }
+  &__image {
+    margin-bottom: 30px;
+  }
+  &__section-title {
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__items {
+    padding-bottom: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: $primalBackgroundColor;
+  }
+  &__socials {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+.socials__link--team:hover,
+.socials__link--team:focus {
+  color: $snowWhiteColor;
+}
+
+.socials__items--team {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #afb1b8;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.socials__items--team:not(:first-child) {
+  margin-left: 10px;
+}
+
+// REGULAR
+.regular {
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    border-color: $buttonBackgrounColor;
+    color: $altTextColor;
+  }
+
+  &__icon {
+    fill: currentColor;
+    width: 106px;
+    height: 60px;
+  }
+  &__link {
+    display: block;
+    color: inherit;
+    outline: none;
+    width: 170px;
+    padding: 16px 32px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
