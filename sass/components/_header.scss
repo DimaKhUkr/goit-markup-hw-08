@@ -1,10 +1,11 @@
 .header {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   border-bottom: 1px solid #ececec;
   &__logo {
+    padding: 16px 0;
     margin-right: 93px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
   }
   &__container {
     display: flex;
@@ -16,6 +17,7 @@
   }
   &__navigation {
     display: flex;
+    display: none;
   }
   &__link {
     display: block;
@@ -50,6 +52,7 @@
   &__contacts {
     display: flex;
     margin-left: auto;
+    display: none;
   }
   &__connection:not(:first-child) {
     margin-left: 50px;
