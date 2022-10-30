@@ -2,7 +2,7 @@ body {
   /* margin-left: auto;
   margin-right: auto;
   max-width: 1600px; */
-  width: 480px;
+  max-width: 480px;
   background-color: #ffffff;
   color: #757575;
   font-family: "Roboto", sans-serif;
@@ -161,9 +161,9 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
+  width: 450px;
   padding: 40px;
-  height: 581px;
+  height: 609px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
