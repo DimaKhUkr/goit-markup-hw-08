@@ -2,7 +2,6 @@ body {
   /* margin-left: auto;
   margin-right: auto;
   max-width: 1600px; */
-  width: 480px;
   background-color: #ffffff;
   color: #757575;
   font-family: "Roboto", sans-serif;
@@ -658,7 +657,6 @@ img {
   padding-bottom: 118px;
   padding-top: 118px;
   height: 400px;
-  min-width: 480px;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background.jpg);
@@ -682,6 +680,8 @@ img {
 }
 .features__items {
   max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (max-width: 767px) {
   .features__items:not(:last-child) {
@@ -759,6 +759,8 @@ img {
   margin-bottom: 50px;
 }
 .team__items {
+  margin-left: auto;
+  margin-right: auto;
   max-width: 450px;
   padding-bottom: 24px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -819,13 +821,19 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: -15px;
 }
-.regular__items {
-  margin: 15px;
-  width: calc((100% - 60px) / 2);
+@media screen and (max-width: 767px) {
+  .regular__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .regular__items {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+  }
 }
 .regular__link:hover, .regular__link:focus {
   border-color: #2196f3;
