@@ -10,6 +10,10 @@
   &__container {
     display: flex;
     align-items: center;
+    @media screen and (max-width: 767px) {
+      justify-content: space-between;
+      position: relative;
+    }
   }
   &__nav {
     display: flex;
@@ -33,7 +37,7 @@
   }
   &__link--current {
     position: relative;
-    color: $buttonBackgrounColor;
+    color: $altTextColor;
   }
   &__link--current::after {
     position: absolute;

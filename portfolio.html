@@ -61,6 +61,62 @@
             </a>
           </li>
         </ul>
+        <!-- MOBILE -->
+
+         <div class="mobile">
+
+          <button type="button" class="mobile__btn mobile__btn--open js-open-menu"  aria-expanded="false" aria-controls="menu-conteiner">
+              <svg width="40" height="40"  aria-label="Перемикач мобільного меню" class="mobile__btn-icon">
+                <use class="mobile__icon-open" href="./images/svg/inline.svg#mobile-open"></use>
+                <!-- <use class="mobile__icon-close" href="./images/svg/inline.svg#mobile-close"></use> -->
+              </svg>
+          </button>
+
+          <div class="mobile__menu js-menu-container"  id="menu-conteiner">
+          <div class="mobile__overley">
+            <button type="button" class="mobile__btn mobile__btn--close js-close-menu" ">
+              <svg width="40" height="40"  aria-label="Перемикач мобільного меню" class="mobile__btn-icon">
+                <!-- <use class="mobile__icon-open" href="./images/svg/inline.svg#mobile-open"></use> -->
+                <use class="mobile__icon-close" href="./images/svg/inline.svg#mobile-close"></use>
+              </svg>
+          </button>
+           <nav class="mobile__nav">
+            <ul class="list mobile__nav-list">
+             <li class="mobile__nav-items">
+              <a href="./index.html" class="link mobile__nav-link">Студія</a></li>
+             <li class="mobile__nav-items">
+              <a href="./portfolio.html" class="link mobile__nav-link mobile__nav-link--current">Портфоліо</a></li>
+             <li class="mobile__nav-items">
+              <a href="" class="link mobile__nav-link">Контакти</a></li>
+            </ul>
+           </nav>
+
+            <ul class="list mobile__contacts-list">
+              <li class="mobile__contacts-items">
+              <a href="tel:+380961111111" class="link mobile__contacts-link mobile__contacts-link--phone">
+              +38 096 111 11 11
+            </a>
+             </li>
+             <li class="mobile__contacts-items">
+              <a href="mailto:info@devstudio.com" class="link mobile__contacts-link mobile__contacts-link--mail">
+             info@devstudio.com
+            </a></li>
+           
+           </ul>
+
+            <ul class="list mobile__socials-list">
+             <li class="mobile__socials-items">
+              <a class="link mobile__socials-link" href="http://">Instagram</a></li>
+             <li class="mobile__socials-items">
+              <a class="link mobile__socials-link" href="http://">Twitter</a></li>
+             <li class="mobile__socials-items">
+              <a class="link mobile__socials-link" href="http://">Facebook</a></li>
+             <li class="mobile__socials-items">
+              <a class="link mobile__socials-link" href="http://">LinkedIn</a></li>
+            </ul>
+           </div>
+          </div>
+         </div>
       </div>
     </header>
 
@@ -76,7 +132,8 @@
 <!-- EXAMPLES BUTTONS -->
 
           <ul class="list examples__list">
-            <li class="examples__btn-item"><button type="button" class="examples__button">Усі</button></li>
+            <li class="examples__btn-item">
+              <button type="button" class="examples__button">Усі</button></li>
             <li class="examples__btn-item">
               <button type="button" class="examples__button">Веб-сайти</button>
             </li>
@@ -298,5 +355,13 @@
       </div>
     </footer>
    
+<script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="javascript/mobile-menu.js"></script>
+
   </body>
 </html>
