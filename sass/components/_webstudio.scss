@@ -57,10 +57,11 @@
 
 // FEATURES
 .features {
-  // &__list {
-  //   display: flex;
-  //   justify-content: space-between;
-  // }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
   &__description {
     line-height: 1.71;
   }

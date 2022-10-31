@@ -82,6 +82,8 @@
   &__socials-list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
   }
   &__socials-items:not(:last-child) {
     padding-right: 10px;

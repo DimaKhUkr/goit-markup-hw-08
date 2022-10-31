@@ -40,11 +40,11 @@
   &__btn-item:not(:last-child) {
     margin-right: 8px;
   }
-  &__btn-item:nth-child(3) {
-    @media screen and (max-width: 767px) {
-      margin-right: 100px;
-    }
-  }
+  // &__btn-item:nth-child(3) {
+  //   @media screen and (max-width: 767px) {
+  //     flex-grow: 1;
+  //   }
+  // }
 }
 
 // EXAMPLES CARDS
