@@ -202,10 +202,11 @@
               <picture>
                 <source 
                 srcset="./images/web.webp 370w, ./images/web@2x.webp 740w" 
-                type = "image/webp"/>
+                type = "image/webp"
+                sizes="370px"/>
               <img
                srcset="./images/web.jpg 370w, ./images/web@2x.jpg 740w" 
-               src="./images/web.jpg" alt="Людина пише код" sizes="370px" />
+               src="./images/web.jpg" alt="Людина пише код" sizes="370px" loading="lazy" />
               </picture>
                <h3 class="works__description">Десктопні додатки</h3>
             </li>
@@ -213,10 +214,11 @@
                <picture>
                 <source 
                 srcset="./images/mobile.webp 370w, ./images/mobile@2x.webp 740w" 
-                type = "image/webp"/>
+                type = "image/webp"
+                sizes="370px"/>
               <img
                srcset="./images/mobile.jpg 370w, ./images/mobile@2x.jpg 740w" 
-               src="./images/web.jpg" alt="Людина пише код" sizes="33vw" />
+               src="./images/web.jpg" alt="Людина пише код" sizes="370px" loading="lazy" />
               </picture>
               <h3 class="works__description">Мобільні додатки</h3>
             </li>
@@ -224,10 +226,11 @@
               <picture>
                 <source 
                 srcset="./images/design.webp 370w, ./images/design@2x.webp 740w" 
-                type = "image/webp"/>
+                type = "image/webp"
+                sizes="370px"/>
               <img
                srcset="./images/design.jpg 370w, ./images/design@2x.jpg 740w" 
-               src="./images/web.jpg" alt="Людина пише код" sizes="33vw" />
+               src="./images/web.jpg" alt="Людина пише код" sizes="370px" loading="lazy" />
               </picture>
                <h3 class="works__description">Дизайнерські рішення</h3>
             </li>
@@ -251,7 +254,10 @@
                 ./images/igor-540.webp 540w,
                 ./images/igor-708.webp 708w,
                 ./images/igor-900.webp 900w "
-                type = "image/webp"/>
+                type = "image/webp"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                />
+                
               <img
                srcset="./images/igor-270.jpg 270w,
                ./images/igor-354.jpg 354w,
@@ -259,7 +265,7 @@
                ./images/igor-540.jpg 540w,
                ./images/igor-708.jpg 708w,
                ./images/igor-900.jpg 900w " 
-               src="./images/igor.jpg" alt="Людина пише код"  class="team__image" sizes="(min-width: 1200px) 270px, (min-width: 768px) 450px, 100vw" />
+               src="./images/igor.jpg" alt="Людина пише код"  class="team__image" sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw" />
               </picture>
               <h3 class="title team__title">Ігор Дем'яненко</h3>
               <p lang="en" class="team__role">Product Designer</p>
@@ -295,12 +301,28 @@
               </ul>
             </li>
             <li class="team__items">
+              <picture>
+                <source 
+                srcset="
+                ./images/olga-270.webp 270w,
+                ./images/olga-354.webp 354w,
+                ./images/olga-450.webp 450w,
+                ./images/olga-540.webp 540w,
+                ./images/olga-708.webp 708w,
+                ./images/olga-900.webp 900w "
+                type = "image/webp"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                />
+                
               <img
-                src="./images/olga.jpg"
-                alt="Фото Ольга Рєпіна"
-                width="270"
-                class="team__image"
-              />
+               srcset="./images/igor-270.jpg 270w,
+               ./images/olga-354.jpg 354w,
+               ./images/olga-450.jpg 450w,
+               ./images/olga-540.jpg 540w,
+               ./images/olga-708.jpg 708w,
+               ./images/olga-900.jpg 900w " 
+               src="./images/olga.jpg" alt="Людина пише код"  class="team__image" sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw" />
+              </picture>
               <h3 class="title team__title">Ольга Рєпіна</h3>
               <p lang="en" class="team__role">Frontend Developer</p>
              <ul class="list socials team__socials">
@@ -335,12 +357,28 @@
               </ul>
             </li>
             <li class="team__items">
+              <picture>
+                <source 
+                srcset="
+                ./images/mykola-270.webp 270w,
+                ./images/mykola-354.webp 354w,
+                ./images/mykola-450.webp 450w,
+                ./images/mykola-540.webp 540w,
+                ./images/mykola-708.webp 708w,
+                ./images/mykola-900.webp 900w "
+                type = "image/webp"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                />
+                
               <img
-                src="./images/mykola.jpg"
-                alt="Фото Микола Тарасов"
-                width="270"
-                class="team__image"
-              />
+               srcset="./images/igor-270.jpg 270w,
+               ./images/mykola-354.jpg 354w,
+               ./images/mykola-450.jpg 450w,
+               ./images/mykola-540.jpg 540w,
+               ./images/mykola-708.jpg 708w,
+               ./images/mykola-900.jpg 900w " 
+               src="./images/mykola.jpg" alt="Людина пише код"  class="team__image" sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw" />
+              </picture>
               <h3 class="title team__title">Микола Тарасов</h3>
               <p lang="en" class="team__role">Marketing</p>
              <ul class="list socials team__socials">
@@ -374,12 +412,28 @@
               </li>
               </ul>
               <li class="team__items">
-              <img
-                src="./images/myhailo.jpg"
-                alt="Фото Михайло Єрмаков"
-                width="270"
-                class="team__image"
-              />
+                <picture>
+                  <source 
+                  srcset="
+                  ./images/myhailo-270.webp 270w,
+                  ./images/myhailo-354.webp 354w,
+                  ./images/myhailo-450.webp 450w,
+                  ./images/myhailo-540.webp 540w,
+                  ./images/myhailo-708.webp 708w,
+                  ./images/myhailo-900.webp 900w "
+                  type = "image/webp"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                  />
+                  
+                <img
+                 srcset="./images/igor-270.jpg 270w,
+                 ./images/myhailo-354.jpg 354w,
+                 ./images/myhailo-450.jpg 450w,
+                 ./images/myhailo-540.jpg 540w,
+                 ./images/myhailo-708.jpg 708w,
+                 ./images/myhailo-900.jpg 900w " 
+                 src="./images/myhailo.jpg" alt="Людина пише код"  class="team__image" sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw" />
+                </picture>
               <h3 class="title team__title">Михайло Єрмаков</h3>
               <p lang="en" class="team__role">UI Designer</p> 
              <ul class="list socials team__socials">
