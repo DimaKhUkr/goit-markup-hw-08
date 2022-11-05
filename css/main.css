@@ -455,6 +455,9 @@ img {
   background-color: #2196f3;
 }
 .header__link--nav {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   padding-bottom: 32px;
   padding-top: 32px;
   color: #212121;
@@ -495,6 +498,9 @@ img {
   }
 }
 .header__link--contacts {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;

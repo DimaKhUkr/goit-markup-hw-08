@@ -49,6 +49,9 @@
     background-color: $buttonBackgrounColor;
   }
   &__link--nav {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     padding-bottom: 32px;
     padding-top: 32px;
     color: $tittleTextColor;
@@ -60,6 +63,7 @@
     color: $altTextColor;
   }
   &__contacts {
+    
     display: flex;
     margin-left: auto;
     @media screen and (max-width: 1199px) {
@@ -80,6 +84,9 @@
   }
 
   &__link--contacts {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     display: inline-flex;
     align-items: center;
     color: $primalTextColor;
