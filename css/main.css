@@ -184,6 +184,11 @@ img {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+@media screen and (min-width: 1200px) {
+  .modal__window {
+    width: 528px;
+  }
+}
 .modal--is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -344,6 +349,11 @@ img {
       -ms-flex-align: center;
           align-items: center;
   line-height: 1.71;
+}
+@media screen and (max-width: 1199px) {
+  .modal__label-agreement {
+    font-size: 12px;
+  }
 }
 .modal__input-agreement:checked + .modal__icon-agreement {
   background-color: #2196f3;
