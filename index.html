@@ -199,23 +199,36 @@
           <h2 class="section-title works__title">Чим ми займаємося</h2>
           <ul class="list works__list">
             <li class="works__items">
-              <img src="./images/web.jpg" alt="Людина пише код" width="370" />
+              <picture>
+                <source 
+                srcset="./images/web.webp 370w, ./images/web@2x.webp 740w" 
+                type = "image/webp"/>
+              <img
+               srcset="./images/web.jpg 370w, ./images/web@2x.jpg 740w" 
+               src="./images/web.jpg" alt="Людина пише код" sizes="370px" />
+              </picture>
                <h3 class="works__description">Десктопні додатки</h3>
             </li>
             <li class="works__items">
+               <picture>
+                <source 
+                srcset="./images/mobile.webp 370w, ./images/mobile@2x.webp 740w" 
+                type = "image/webp"/>
               <img
-                src="./images/mobile.jpg"
-                alt="Людина створює мобільну версію сайту"
-                width="370"
-              />
+               srcset="./images/mobile.jpg 370w, ./images/mobile@2x.jpg 740w" 
+               src="./images/web.jpg" alt="Людина пише код" sizes="33vw" />
+              </picture>
               <h3 class="works__description">Мобільні додатки</h3>
             </li>
             <li class="works__items">
+              <picture>
+                <source 
+                srcset="./images/design.webp 370w, ./images/design@2x.webp 740w" 
+                type = "image/webp"/>
               <img
-                src="./images/design.jpg"
-                alt="Людина розробляє дизайн"
-                width="370"
-              />
+               srcset="./images/design.jpg 370w, ./images/design@2x.jpg 740w" 
+               src="./images/web.jpg" alt="Людина пише код" sizes="33vw" />
+              </picture>
                <h3 class="works__description">Дизайнерські рішення</h3>
             </li>
           </ul>
@@ -229,12 +242,25 @@
           <h2 class="section-title team__section-title">Наша команда</h2>
           <ul class="list team__list">
             <li class="team__items">
+             <picture>
+                <source 
+                srcset="
+                ./images/igor-270.webp 270w,
+                ./images/igor-354.webp 354w,
+                ./images/igor-450.webp 450w,
+                ./images/igor-540.webp 540w,
+                ./images/igor-708.webp 708w,
+                ./images/igor-900.webp 900w "
+                type = "image/webp"/>
               <img
-                src="./images/igor.jpg"
-                alt="Фото Ігор Дем'яненко"
-                width="270"
-                class="team__image"
-              />
+               srcset="./images/igor-270.jpg 270w,
+               ./images/igor-354.jpg 354w,
+               ./images/igor-450.jpg 450w,
+               ./images/igor-540.jpg 540w,
+               ./images/igor-708.jpg 708w,
+               ./images/igor-900.jpg 900w " 
+               src="./images/igor.jpg" alt="Людина пише код"  class="team__image" sizes="(min-width: 1200px) 270px, (min-width: 768px) 450px, 100vw" />
+              </picture>
               <h3 class="title team__title">Ігор Дем'яненко</h3>
               <p lang="en" class="team__role">Product Designer</p>
              <ul class="list socials team__socials">
